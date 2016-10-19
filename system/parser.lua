@@ -79,7 +79,7 @@ function NeP.Parser.Parse(eval)
 						SpellStopCasting()
 					end
 					eval.func(spell.spell, eval.target)
-					NeP.LastCast = spell.spell
+					NeP.Parser.LastCast = spell.spell
 					NeP.ActionLog:Add('Parser', spell.spell, spell.icon, eval.target)
 					NeP.Interface:UpdateIcon('mastertoggle', spell.icon)
 					return true
